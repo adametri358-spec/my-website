@@ -4,86 +4,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello you</title>
-    <Style>
-*{
-    padding: 0px;
-    margin: 0px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-header{
-    
-    height: 70px;
-    width:100%;
-    z-index:100 ;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-}
-header ul{
-    align-items: center;
-    margin: 50px;
-    display: flex;
-    list-style: none;
-}
-li{
-    margin: 30px;
-}
-   a{
-    padding:5px 10px;
-    transition: 0.67s;
-    color:white;
-text-decoration: none;  
-}
-body{
-    
-    height: 100vh;
-    background: linear-gradient(#383ef9,#8db0ed);
-}
 
-header h2{
-    margin:30px;
-    color:white;
-    
-}
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            box-sizing: border-box;
+        }
 
-a:hover{
-    transform:scale(1.25);
-    color: black; background-color: aliceblue;
-    border-radius: 20px;
-    padding: 5px 10px;
-}
-#A1{
-    background-color: white;
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    top: 160px;
-    left: 70px;
-    border-radius: 20px;
+        header{
+            height: 70px;
+            width: 100%;
+            z-index: 100;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
 
+        header ul{
+            align-items: center;
+            margin: 50px;
+            display: flex;
+            list-style: none;
+        }
 
-}
-#A2{
-    text-align: center;
-}
-#i1{
-    position: absolute;
-    top: 30px; left: 65px;
-    width:170px;
-    height:170px;
-    border-radius: 10px;
-}
-#btn{
-    border: none;
-}
-    </Style>
+        li{
+            margin: 30px;
+        }
+
+        a{
+            padding: 5px 10px;
+            transition: 0.67s;
+            color: white;
+            text-decoration: none;
+        }
+
+        body{
+            min-height: 100vh;
+            background: linear-gradient(#383ef9,#8db0ed);
+            overflow-x: hidden;
+        }
+
+        header h2{
+            margin: 30px;
+            color: white;
+        }
+
+        a:hover{
+            transform: scale(1.25);
+            color: black;
+            background-color: aliceblue;
+            border-radius: 20px;
+            padding: 5px 10px;
+        }
+
+        #A1{
+            background-color: white;
+            width: 300px;
+            min-height: 300px;
+            position: absolute;
+            top: 160px;
+            left: 70px;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        #A2{
+            text-align: center;
+        }
+
+        #i1{
+            width: 170px;
+            height: 170px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        #btn{
+            border: none;
+            border-radius: 7px;
+            background-color: rgb(168, 168, 255);
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        #btn a{
+            color: black;
+        }
+
+        @media (max-width: 700px){
+
+            header{
+                height: auto;
+                padding: 10px 0;
+                flex-direction: column;
+            }
+
+            header h2{
+                margin: 5px 0 10px;
+            }
+
+            header ul{
+                margin: 0;
+                width: 100%;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            li{
+                margin: 5px 7px;
+            }
+
+            a{
+                font-size: 14px;
+                padding: 5px 7px;
+            }
+
+            #A1{
+                width: calc(100% - 30px);
+                max-width: 300px;
+                height: auto;
+                min-height: 300px;
+                top: 170px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            #i1{
+                width: 170px;
+                height: 170px;
+            }
+        }
+
+        @media (max-width: 400px){
+
+            li{
+                margin: 4px 3px;
+            }
+
+            a{
+                font-size: 13px;
+                padding: 5px 6px;
+            }
+
+            #A1{
+                top: 175px;
+            }
+
+            #i1{
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
 </head>
+
 <body id="A14">
-        <audio id="song">
+
+    <audio id="song">
         <source src="Devilmaycry.mp3" type="audio/mp3">
     </audio>
+
     <header class="head">
         <h2>mr.game</h2>
+
         <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="ps1.html">ps1</a></li>
@@ -92,32 +177,42 @@ a:hover{
             <li><a href="ps4.html">ps4</a></li>
             <li><a href="psp.html">psp</a></li>
         </ul>
-        </header>
-        <hr>
-        <div id="A1">
-            <div id="A2">
-                <img id="i1"src="Devil_May_Cry_3_boxshot.jpg"/>
-                <br><Br><Br><br><Br><Br><br><Br><Br><br><br><br>
-                <span>Devil_May_Cry_3 ps2</span>
-                <br><br>
-            <button  id="btn" style="border-radius: 7px; background-color: rgb(168, 168, 255);"><a href="https://github.com/adametri358-spec/my-website/releases/download/v1.0/Plants.vs.Zombies.Repack.rar">DOWNLOAD</a></button>
-            </div>
-            
+    </header>
+
+    <hr>
+
+    <div id="A1">
+        <div id="A2">
+
+            <img id="i1" src="Devil_May_Cry_3_boxshot.jpg">
+
+            <br><br>
+
+            <span>Devil_May_Cry_3 ps2</span>
+
+            <br><br>
+
+            <button id="btn">
+                <a href="https://github.com/adametri358-spec/my-website/releases/download/v1.0/Plants.vs.Zombies.Repack.rar">DOWNLOAD</a>
+            </button>
+
         </div>
-       
-        
-        
+    </div>
+
+    <script>
+        let butt = document.getElementById("btn");
+        let song = document.getElementById("song");
+
+        butt.addEventListener("click", () => {
+            song.currentTime = 0;
+            song.play();
+
+            setTimeout(() => {
+                song.pause();
+            }, 10000);
+        });
+    </script>
+
 </body>
-        <script>
-        let butt =document.getElementById("btn");
-let song=document.getElementById("song");
- butt.addEventListener("click",()=>{
-   song.currentTime=0;
-   song.play();
-   setTimeout(() => {
-    song.pause();
-   }, 10000);
-   
- });
-       </script>
 </html>
+
